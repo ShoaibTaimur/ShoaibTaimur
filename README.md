@@ -1,6 +1,7 @@
 # 👋 Hi, I'm Shoaib Taimur  
 
-**Studying BSc in Computer Science & Engineering (CSE)** | **Aspiring Data Analyst / Data Scientist and MERN Stack Developer**  
+**Studying BSc in Computer Science & Engineering (CSE)** | 
+**Aspiring Data Analyst / Data Scientist and MERN Stack Developer**  
 
 
 ---
