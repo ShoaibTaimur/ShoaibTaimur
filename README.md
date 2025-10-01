@@ -7,7 +7,7 @@
 ---
 
 ##  About Me  
--  Currently studying **CSE (1st semester)** with a focus on **Data Science & Analytics**  
+-  Currently studying **CSE (2nd semester)** with a focus on **Data Science & Analytics**  
 -  Learning **C programming & core CS fundamentals** to build a strong foundation  
 -  Exploring **MERN Stack** alongside data skills to become versatile in tech  
 -  Gained freelance experience in **Video Editing, Graphic Design & Email Marketing**  
