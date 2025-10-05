@@ -21,19 +21,21 @@
 
 ---
 
-## ⚙️ Tech Stack & Tools  
+## 🛠️ Tech Stack & Tools 
+**Programming & Data** 
+- C, C++, Python, SQL (learning)
+-  Data Analysis, Statistics, Data Manipulation , Data Visualization (in progress)
 
-### 🧮 Programming & Data  
-C • C++ • Python • SQL *(learning)*  
-Data Analysis • Statistics • Data Visualization *(in progress)*  
+**Development (Self Studying)** 
+- MERN Stack (MongoDB, Express.js, React, Node.js)
+- Git & GitHub
+- VS Code
+- Recently shifted to Linux/Zorin OS
 
-### 💻 Development  
-MERN Stack *(MongoDB, Express.js, React, Node.js)*  
-Git & GitHub • VS Code • Linux/Zorin OS  
-
-### 🎨 Creative Tools  
-DaVinci Resolve • Canva • Illustrator • Photoshop  
-Email Marketing Tools  
+**Creative Side** 
+- DaVinci Resolve
+- Canva, Illustrator & Photoshop
+- Email Marketing Tools
 
 ---
 
