@@ -91,7 +91,6 @@
 ---
 
 ☕ Made with coffee, code, and the occasional existential crisis 😅  
-✨ *Glowing in purple vibes since 2025*  
 
 </div>
 
