@@ -94,12 +94,4 @@ Email Marketing Tools
 
 </div>
 
----
 
-### 🌈 Style Notes:
-- **Tokyonight theme** = perfect for GitHub dark mode  
-- **Purple gradient accents** (`#a78bfa`, `#8b5cf6`) give that neon glow feel  
-- All elements centered + consistent emoji tone  
-- No inline HTML that breaks GitHub rendering  
-
----
