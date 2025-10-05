@@ -1,6 +1,7 @@
 <div align="center">
 
-# 🌌 Hi, I'm <span style="color:#a78bfa;">MD Shoaib Taimur</span>  
+![MD Shoaib Taimur](assets/name-badge.svg)
+
 
 🎓 **BSc in Computer Science & Engineering (CSE)**  
 💡 *Aspiring Data Analyst / Data Scientist & MERN Stack Developer*  
