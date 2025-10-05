@@ -3,8 +3,7 @@
 ![MD Shoaib Taimur](assets/name-badge.svg)
 
 
-🎓 **BSc in Computer Science & Engineering (CSE)**  
-💡 *Aspiring Data Analyst / Data Scientist & MERN Stack Developer*  
+
 
 <img src="https://komarev.com/ghpvc/?username=ShoaibTaimur&label=Profile%20views&color=8b5cf6&style=flat-square" alt="Profile views" />
 
