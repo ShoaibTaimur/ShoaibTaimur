@@ -28,9 +28,15 @@ jobs:
             echo "Missing GH_STATS_TOKEN secret. Create a classic GitHub PAT and add it to repo secrets."
             exit 1
           fi
-          curl -fSL "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/github-stats.svg
-          curl -fSL "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/github-streak.svg
-          curl -fSL "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/top-langs.svg
+          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
+            "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
+            -o /tmp/github-stats.svg
+          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
+            "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
+            -o /tmp/github-streak.svg
+          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
+            "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
+            -o /tmp/top-langs.svg
 
           grep -q "<svg" /tmp/github-stats.svg
           grep -q "<svg" /tmp/github-streak.svg
