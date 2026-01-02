@@ -14,12 +14,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install SVG converter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+
       - name: Fetch stats
         run: |
           mkdir -p assets/stats
-          curl -L "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12" -o assets/stats/github-stats.svg
-          curl -L "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12" -o assets/stats/github-streak.svg
-          curl -L "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" -o assets/stats/top-langs.svg
+          curl -L "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/github-stats.svg
+          curl -L "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/github-streak.svg
+          curl -L "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/top-langs.svg
+
+          rsvg-convert -o assets/stats/github-stats.png /tmp/github-stats.svg
+          rsvg-convert -o assets/stats/github-streak.png /tmp/github-streak.svg
+          rsvg-convert -o assets/stats/top-langs.png /tmp/top-langs.svg
 
       - name: Commit changes
         run: |

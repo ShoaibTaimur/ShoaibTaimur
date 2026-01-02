@@ -73,12 +73,12 @@
 ## 📊 GitHub Stats  
 <div align="center">
 
-<img src="assets/stats/github-stats.svg" height="160" />
-<img src="assets/stats/github-streak.svg" height="160" />
+<img src="assets/stats/github-stats.png" height="160" />
+<img src="assets/stats/github-streak.png" height="160" />
 
 <br/>
 
-<img src="assets/stats/top-langs.svg" height="160" />
+<img src="assets/stats/top-langs.png" height="160" />
 
 </div>
 
