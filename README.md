@@ -74,6 +74,7 @@
 <div align="center">
 
 <img src="assets/stats/profile-stats.svg" height="200" />
+<img src="assets/stats/languages.svg" height="220" />
 
 </div>
 

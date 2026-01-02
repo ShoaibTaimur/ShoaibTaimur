@@ -7,6 +7,7 @@ import urllib.request
 
 USERNAME = "ShoaibTaimur"
 OUT_PATH = os.path.join("assets", "stats", "profile-stats.svg")
+LANG_PATH = os.path.join("assets", "stats", "languages.svg")
 
 
 def fetch_json(url, token):
@@ -37,7 +38,7 @@ def get_all_repos(token):
     return repos
 
 
-def render_svg(stats):
+def render_profile_svg(stats):
     width = 640
     height = 220
     bg = "#0f172a"
@@ -64,6 +65,51 @@ def render_svg(stats):
     return "\n".join(lines)
 
 
+def render_langs_svg(lang_totals):
+    width = 640
+    padding = 24
+    line_height = 18
+    title_height = 58
+    col_gap = 24
+    col_width = (width - (padding * 2) - col_gap) // 2
+
+    items = sorted(lang_totals.items(), key=lambda kv: kv[1], reverse=True)
+    if not items:
+        items = [("No languages found", 0)]
+
+    rows = (len(items) + 1) // 2
+    height = padding + title_height + (rows * line_height) + padding
+
+    bg = "#0f172a"
+    card = "#111827"
+    accent = "#38bdf8"
+    text = "#e5e7eb"
+    subtext = "#94a3b8"
+
+    lines = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+        f'<rect width="{width}" height="{height}" fill="{bg}"/>',
+        f'<rect x="16" y="16" width="{width - 32}" height="{height - 32}" rx="14" fill="{card}"/>',
+        f'<text x="{padding + 8}" y="52" fill="{text}" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>',
+        f'<line x1="{padding + 8}" y1="66" x2="{width - (padding + 8)}" y2="66" stroke="{accent}" stroke-width="2" opacity="0.5"/>',
+        f'<text x="{padding + 8}" y="88" fill="{subtext}" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Total bytes across public repos</text>',
+    ]
+
+    start_y = 118
+    for idx, (lang, bytes_count) in enumerate(items):
+        col = idx // rows
+        row = idx % rows
+        x = padding + 8 + (col * (col_width + col_gap))
+        y = start_y + (row * line_height)
+        label = f"{lang}: {bytes_count:,}"
+        lines.append(
+            f'<text x="{x}" y="{y}" fill="{text}" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">{label}</text>'
+        )
+
+    lines.append("</svg>")
+    return "\n".join(lines)
+
+
 def main():
     token = os.environ.get("GITHUB_TOKEN")
     user_url = f"https://api.github.com/users/{USERNAME}"
@@ -81,9 +127,22 @@ def main():
     }
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
-    svg = render_svg(stats)
+    lang_totals = {}
+    for repo in repos:
+        lang_url = repo.get("languages_url")
+        if not lang_url:
+            continue
+        data, _ = fetch_json(lang_url, token)
+        for lang, count in data.items():
+            lang_totals[lang] = lang_totals.get(lang, 0) + int(count)
+
+    svg = render_profile_svg(stats)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(svg)
+
+    lang_svg = render_langs_svg(lang_totals)
+    with open(LANG_PATH, "w", encoding="utf-8") as f:
+        f.write(lang_svg)
 
 
 if __name__ == "__main__":
