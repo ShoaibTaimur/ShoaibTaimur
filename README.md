@@ -73,8 +73,8 @@
 ## 📊 GitHub Stats  
 <div align="center">
 
-<img src="assets/stats/profile-stats.svg" height="200" />
-<img src="assets/stats/languages.svg" height="220" />
+<img src="https://raw.githubusercontent.com/ShoaibTaimur/ShoaibTaimur/main/assets/stats/profile-stats.svg" height="200" />
+<img src="https://raw.githubusercontent.com/ShoaibTaimur/ShoaibTaimur/main/assets/stats/languages.svg" height="220" />
 
 </div>
 
