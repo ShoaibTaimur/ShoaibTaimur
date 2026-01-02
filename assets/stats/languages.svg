@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220">
-  <rect width="640" height="220" fill="#0f172a"/>
-  <rect x="16" y="16" width="608" height="188" rx="14" fill="#111827"/>
-  <text x="40" y="60" fill="#e5e7eb" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
-  <line x1="40" y1="74" x2="600" y2="74" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
-  <text x="40" y="98" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Run the "Generate Profile Stats" workflow to update</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="124" viewBox="0 0 640 124">
+<rect width="640" height="124" fill="#0f172a"/>
+<rect x="16" y="16" width="608" height="92" rx="14" fill="#111827"/>
+<text x="32" y="52" fill="#e5e7eb" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
+<line x1="32" y1="66" x2="608" y2="66" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
+<text x="32" y="88" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Total bytes across public repos</text>
+<text x="32" y="118" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 9,746</text>
+<text x="340" y="118" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 4,595</text>
 </svg>
