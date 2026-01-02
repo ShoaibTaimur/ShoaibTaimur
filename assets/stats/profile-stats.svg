@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220">
-<rect width="640" height="220" fill="#0f172a"/>
-<rect x="16" y="16" width="608" height="188" rx="14" fill="#111827"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="266" viewBox="0 0 640 266">
+<rect width="640" height="266" fill="#0f172a"/>
+<rect x="16" y="16" width="608" height="234" rx="14" fill="#111827"/>
 <text x="40" y="60" fill="#e5e7eb" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">GitHub Snapshot</text>
 <text x="40" y="86" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">@ShoaibTaimur</text>
 <line x1="40" y1="100" x2="600" y2="100" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
@@ -10,4 +10,8 @@
 <text x="40" y="160" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Stars Earned: 0</text>
 <text x="240" y="160" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Forks: 0</text>
 <text x="40" y="188" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Updated by GitHub Actions</text>
+<text x="40" y="212" fill="#e5e7eb" font-size="16" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
+<line x1="40" y1="220" x2="600" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
+<text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 9,746</text>
+<text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 4,595</text>
 </svg>
