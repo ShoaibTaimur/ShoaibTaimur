@@ -20,11 +20,21 @@ jobs:
           sudo apt-get install -y librsvg2-bin
 
       - name: Fetch stats
+        env:
+          STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
           mkdir -p assets/stats
-          curl -L "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/github-stats.svg
-          curl -L "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/github-streak.svg
-          curl -L "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${GITHUB_TOKEN}" -o /tmp/top-langs.svg
+          if [ -z "${STATS_TOKEN}" ]; then
+            echo "Missing GH_STATS_TOKEN secret. Create a classic GitHub PAT and add it to repo secrets."
+            exit 1
+          fi
+          curl -fSL "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/github-stats.svg
+          curl -fSL "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/github-streak.svg
+          curl -fSL "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" -o /tmp/top-langs.svg
+
+          grep -q "<svg" /tmp/github-stats.svg
+          grep -q "<svg" /tmp/github-streak.svg
+          grep -q "<svg" /tmp/top-langs.svg
 
           rsvg-convert -o assets/stats/github-stats.png /tmp/github-stats.svg
           rsvg-convert -o assets/stats/github-streak.png /tmp/github-streak.svg
