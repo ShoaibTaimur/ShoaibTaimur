@@ -28,19 +28,34 @@ jobs:
             echo "Missing GH_STATS_TOKEN secret. Create a classic GitHub PAT and add it to repo secrets."
             exit 1
           fi
-          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
-            "https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
-            -o /tmp/github-stats.svg
-          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
-            "https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
-            -o /tmp/github-streak.svg
-          curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
-            "https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&token=${STATS_TOKEN}" \
-            -o /tmp/top-langs.svg
+          fetch_svg() {
+            local url_list="$1"
+            local out_file="$2"
+            local ok=0
+            for base in $url_list; do
+              if curl -fSL --retry 5 --retry-delay 2 --retry-all-errors \
+                "${base}&token=${STATS_TOKEN}" -o "${out_file}"; then
+                if grep -q "<svg" "${out_file}"; then
+                  ok=1
+                  break
+                fi
+              fi
+            done
+            if [ $ok -ne 1 ]; then
+              echo "Failed to fetch valid SVG for ${out_file}"
+              exit 1
+            fi
+          }
 
-          grep -q "<svg" /tmp/github-stats.svg
-          grep -q "<svg" /tmp/github-streak.svg
-          grep -q "<svg" /tmp/top-langs.svg
+          STATS_URLS="https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12"
+          STATS_URLS="${STATS_URLS} https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12"
+          LANGS_URLS="https://github-readme-stats.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12"
+          LANGS_URLS="${LANGS_URLS} https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=ShoaibTaimur&layout=compact&theme=tokyonight&hide_border=true&border_radius=12"
+          STREAK_URLS="https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12"
+
+          fetch_svg "${STATS_URLS}" /tmp/github-stats.svg
+          fetch_svg "${STREAK_URLS}" /tmp/github-streak.svg
+          fetch_svg "${LANGS_URLS}" /tmp/top-langs.svg
 
           rsvg-convert -o assets/stats/github-stats.png /tmp/github-stats.svg
           rsvg-convert -o assets/stats/github-streak.png /tmp/github-streak.svg
