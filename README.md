@@ -74,7 +74,7 @@
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=ShoaibTaimur&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12" height="160" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12" height="160" />
+<img src="https://streak-stats.demolab.com?user=ShoaibTaimur&theme=tokyonight&hide_border=true&border_radius=12" height="160" />
 
 <br/>
 
@@ -93,5 +93,4 @@
 ☕ Made with coffee, code, and the occasional existential crisis 😅  
 
 </div>
-
 
