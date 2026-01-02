@@ -7,7 +7,6 @@ import urllib.request
 
 USERNAME = "ShoaibTaimur"
 OUT_PATH = os.path.join("assets", "stats", "profile-stats.svg")
-LANG_PATH = os.path.join("assets", "stats", "languages.svg")
 
 
 def fetch_json(url, token):
@@ -38,9 +37,11 @@ def get_all_repos(token):
     return repos
 
 
-def render_profile_svg(stats):
+def render_profile_svg(stats, lang_totals):
     width = 640
-    height = 220
+    line_height = 18
+    rows = max(1, (len(lang_totals) + 1) // 2)
+    height = 220 + (rows * line_height) + 28
     bg = "#0f172a"
     card = "#111827"
     accent = "#38bdf8"
@@ -60,46 +61,24 @@ def render_profile_svg(stats):
         f'<text x="40" y="160" fill="{text}" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Stars Earned: {stats["stars"]}</text>',
         f'<text x="240" y="160" fill="{text}" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Forks: {stats["forks"]}</text>',
         f'<text x="40" y="188" fill="{subtext}" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Updated by GitHub Actions</text>',
-        "</svg>",
     ]
-    return "\n".join(lines)
-
-
-def render_langs_svg(lang_totals):
-    width = 640
-    padding = 24
-    line_height = 18
-    title_height = 58
-    col_gap = 24
-    col_width = (width - (padding * 2) - col_gap) // 2
-
     items = sorted(lang_totals.items(), key=lambda kv: kv[1], reverse=True)
     if not items:
         items = [("No languages found", 0)]
 
-    rows = (len(items) + 1) // 2
-    height = padding + title_height + (rows * line_height) + padding
-
-    bg = "#0f172a"
-    card = "#111827"
-    accent = "#38bdf8"
-    text = "#e5e7eb"
-    subtext = "#94a3b8"
-
-    lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        f'<rect width="{width}" height="{height}" fill="{bg}"/>',
-        f'<rect x="16" y="16" width="{width - 32}" height="{height - 32}" rx="14" fill="{card}"/>',
-        f'<text x="{padding + 8}" y="52" fill="{text}" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>',
-        f'<line x1="{padding + 8}" y1="66" x2="{width - (padding + 8)}" y2="66" stroke="{accent}" stroke-width="2" opacity="0.5"/>',
-        f'<text x="{padding + 8}" y="88" fill="{subtext}" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Total bytes across public repos</text>',
-    ]
-
-    start_y = 118
+    col_gap = 24
+    col_width = (width - 80 - col_gap) // 2
+    start_y = 228
+    lines.append(
+        f'<text x="40" y="212" fill="{text}" font-size="16" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>'
+    )
+    lines.append(
+        f'<line x1="40" y1="220" x2="{width - 40}" y2="220" stroke="{accent}" stroke-width="2" opacity="0.35"/>'
+    )
     for idx, (lang, bytes_count) in enumerate(items):
         col = idx // rows
         row = idx % rows
-        x = padding + 8 + (col * (col_width + col_gap))
+        x = 40 + (col * (col_width + col_gap))
         y = start_y + (row * line_height)
         label = f"{lang}: {bytes_count:,}"
         lines.append(
@@ -136,13 +115,9 @@ def main():
         for lang, count in data.items():
             lang_totals[lang] = lang_totals.get(lang, 0) + int(count)
 
-    svg = render_profile_svg(stats)
+    svg = render_profile_svg(stats, lang_totals)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write(svg)
-
-    lang_svg = render_langs_svg(lang_totals)
-    with open(LANG_PATH, "w", encoding="utf-8") as f:
-        f.write(lang_svg)
 
 
 if __name__ == "__main__":
