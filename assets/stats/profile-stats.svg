@@ -4,7 +4,7 @@
 <text x="40" y="60" fill="#e5e7eb" font-size="20" font-family="Segoe UI, Ubuntu, Arial, sans-serif">GitHub Snapshot</text>
 <text x="40" y="86" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">@ShoaibTaimur</text>
 <line x1="40" y1="100" x2="600" y2="100" stroke="#38bdf8" stroke-width="2" opacity="0.5"/>
-<text x="40" y="132" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Public Repos: 4</text>
+<text x="40" y="132" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Public Repos: 5</text>
 <text x="240" y="132" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Followers: 4</text>
 <text x="400" y="132" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Following: 5</text>
 <text x="40" y="160" fill="#e5e7eb" font-size="14" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Stars Earned: 0</text>
@@ -12,7 +12,7 @@
 <text x="40" y="188" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Updated by GitHub Actions</text>
 <text x="40" y="212" fill="#e5e7eb" font-size="16" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
 <line x1="40" y1="220" x2="600" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
-<text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 26,717</text>
-<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 4,922</text>
-<text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">CSS: 321</text>
+<text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 45,993</text>
+<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 5,392</text>
+<text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">CSS: 550</text>
 </svg>
