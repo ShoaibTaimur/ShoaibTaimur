@@ -8,7 +8,11 @@
 <img src="https://komarev.com/ghpvc/?username=ShoaibTaimur&label=Profile%20views&color=8b5cf6&style=flat-square" alt="Profile views" />
 
 </div>
+<div align="center">
 
+[![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
+
+</div>
 [![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
 
 ---
