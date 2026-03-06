@@ -10,7 +10,7 @@
 </div>
 <div align="center">
 
-[![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
+
 
 </div>
 
@@ -75,10 +75,13 @@
 
 ---
 
-##  GitHub Stats  
+##  Stat cards  
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ShoaibTaimur/ShoaibTaimur/main/assets/stats/profile-stats.svg" height="280" />
+![ShoaibTaimur GitHub Stats](https://stats.shoaaib.site/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300)
+
+[![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
+
 
 </div>
 
