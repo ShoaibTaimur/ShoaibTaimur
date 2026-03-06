@@ -13,7 +13,6 @@
 [![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
 
 </div>
-[![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
 
 ---
 
