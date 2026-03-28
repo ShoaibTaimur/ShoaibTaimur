@@ -12,8 +12,8 @@
 <text x="40" y="188" fill="#94a3b8" font-size="12" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Updated by GitHub Actions</text>
 <text x="40" y="212" fill="#e5e7eb" font-size="16" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
 <line x1="40" y1="220" x2="600" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
-<text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 371,677</text>
-<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">TypeScript: 257,212</text>
+<text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 372,284</text>
+<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">TypeScript: 266,539</text>
 <text x="40" y="264" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Java: 159,759</text>
 <text x="40" y="282" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">CSS: 13,941</text>
 <text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 11,122</text>
