@@ -20,33 +20,33 @@
 
 ---
 
-## 👨‍💻 About Me
+##  About Me
 
-* 🎓 CSE Student (3rd Semester)
-* 📊 Focused on **Data Science & Analytics**
-* 💻 Learning **C, Core CS & Problem Solving**
-* 🌐 Exploring **MERN Stack Development**
-* 🎨 Freelance experience in **Video Editing, Graphic Design & Email Marketing**
-* 🚀 Goal: Build a **tech-driven business in Bangladesh**
+*  CSE Student (3rd Semester)
+*  Focused on **Data Science & Analytics**
+*  Learning **C, Core CS & Problem Solving**
+*  Exploring **MERN Stack Development**
+*  Freelance experience in **Video Editing, Graphic Design & Email Marketing**
+*  Goal: Build a **tech-driven business in Bangladesh**
 
 ---
 
-## 🧠 Tech Stack & Tools
+##  Tech Stack & Tools
 
-### 💻 Programming & Data
+###  Programming & Data
 
 * C, C++, Python, SQL *(learning)*
 * Data Analysis, Statistics
 * Data Manipulation & Visualization *(in progress)*
 
-### 🌐 Development
+###  Development
 
 * MERN Stack (MongoDB, Express, React, Node.js)
 * Git & GitHub
 * VS Code
 * Linux (Zorin OS)
 
-### 🎨 Creative Tools
+###  Creative Tools
 
 * DaVinci Resolve
 * Canva, Illustrator, Photoshop
@@ -54,27 +54,27 @@
 
 ---
 
-## 📈 How I’m Growing
+##  How I’m Growing
 
-* 🧱 Building strong programming & CS fundamentals
-* 🔄 Practicing Git/GitHub workflows
-* 🛠 Developing real-world portfolio projects
-* 🌐 Creating a personal website & blog
-* 🎯 Preparing for Erasmus Mundus MSc in Data Science
-* 📊 Learning entrepreneurship & client management
-
----
-
-## ⚡ Fun Facts
-
-* 🧠 Love critical thinking & problem-solving
-* 🔥 Believe in learning by building
-* 🎯 Passionate about creativity + technology
-* ⚙️ Highly adaptable — can learn anything with time
+*  Building strong programming & CS fundamentals
+*  Practicing Git/GitHub workflows
+*  Developing real-world portfolio projects
+*  Creating a personal website & blog
+*  Preparing for Erasmus Mundus MSc in Data Science
+*  Learning entrepreneurship & client management
 
 ---
 
-## 📊 Stats
+##  Fun Facts
+
+*  Love critical thinking & problem-solving
+*  Believe in learning by building
+*  Passionate about creativity + technology
+*  Highly adaptable — can learn anything with time
+
+---
+
+##  Stats
 
 <p align="center">
   <img src="https://stats.shoaaib.site/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
@@ -89,7 +89,7 @@
 ---
 
 
-## ✨ Quote
+##  Quote
 
 > Curiosity sparks growth, persistence builds success.
 
