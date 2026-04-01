@@ -1,98 +1,98 @@
-<div align="center">
+<p align="center">
+  <img src="assets/name-badge.svg" alt="MD Shoaib Taimur"/>
+</p>
 
-![MD Shoaib Taimur](assets/name-badge.svg)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ShoaibTaimur&label=Profile%20views&color=8b5cf6&style=flat-square"/>
+</p>
 
-
-
-
-<img src="https://komarev.com/ghpvc/?username=ShoaibTaimur&label=Profile%20views&color=8b5cf6&style=flat-square" alt="Profile views" />
-
-</div>
-<div align="center">
-
-
-
-</div>
-
----
-
-## About Me  
--  Currently in **2nd semester of CSE**, focusing on **Data Science & Analytics**  
--  Learning **C programming & core CS fundamentals**  
--  Exploring **MERN Stack** to become versatile in tech  
--  Freelance experience in **Video Editing, Graphic Design & Email Marketing**  
--  Long-term goal: **Build a tech-driven business in Bangladesh**  
-
----
-
-##  Tech Stack & Tools 
-**Programming & Data** 
-- C, C++, Python, SQL (learning)
--  Data Analysis, Statistics, Data Manipulation , Data Visualization (in progress)
-
-**Development (Self Studying)** 
-- MERN Stack (MongoDB, Express.js, React, Node.js)
-- Git & GitHub
-- VS Code
-- Recently shifted to Linux/Zorin OS
-
-**Creative Side** 
-- DaVinci Resolve
-- Canva, Illustrator & Photoshop
-- Email Marketing Tools
-
----
-
-##  How I’m Growing  
-- Building a **strong foundation** in programming and data  
-- Practicing **Git/GitHub collaboration workflows**  
-- Developing **real-world projects** for a portfolio  
-- Planning a **personal website/blog**  
-- Preparing for **Erasmus Mundus MSc in Data Science**  
-- Learning **entrepreneurship & client management**  
-
----
-
-##  Fun Facts  
--  Love **critical thinking & problem-solving**  
--  Believe in **learning by building**  
--  Passionate about **blending creativity with tech**  
--  Can adapt to anything with a bit of time  
-
----
-
-##  Connect With Me  
-<div align="center">
-
-<a href="https://www.linkedin.com/in/shoaaib-taimur" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+<p align="center">
+  <a href="https://shoaaib.site" target="_blank">
+  <img src="https://img.shields.io/badge/🌐%20Portfolio-8b5cf6?style=for-the-badge"/>
 </a>
-<a href="https://www.facebook.com/share/16gMMQzpVh/" target="_blank">
-  <img src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white"/>
-</a>
-
-</div>
-
----
-
-##  Stat cards  
-<div align="center">
-
-![ShoaibTaimur GitHub Stats](https://stats.shoaaib.site/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300)
-
-[![Codeforces Stats](https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark)](https://codeforces.com/profile/Shoaaib_Taimur)
-
-
-</div>
+  <a href="https://www.linkedin.com/in/shoaaib-taimur" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://www.facebook.com/share/16gMMQzpVh/" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
+  </a>
+</p>
 
 ---
 
-<div align="center">
+## 👨‍💻 About Me
 
-###  “Curiosity sparks growth, persistence builds success.”  
+* 🎓 CSE Student (3rd Semester)
+* 📊 Focused on **Data Science & Analytics**
+* 💻 Learning **C, Core CS & Problem Solving**
+* 🌐 Exploring **MERN Stack Development**
+* 🎨 Freelance experience in **Video Editing, Graphic Design & Email Marketing**
+* 🚀 Goal: Build a **tech-driven business in Bangladesh**
 
 ---
 
-☕ Made with coffee, code, and the occasional existential crisis 😅  
+## 🧠 Tech Stack & Tools
 
-</div>
+### 💻 Programming & Data
+
+* C, C++, Python, SQL *(learning)*
+* Data Analysis, Statistics
+* Data Manipulation & Visualization *(in progress)*
+
+### 🌐 Development
+
+* MERN Stack (MongoDB, Express, React, Node.js)
+* Git & GitHub
+* VS Code
+* Linux (Zorin OS)
+
+### 🎨 Creative Tools
+
+* DaVinci Resolve
+* Canva, Illustrator, Photoshop
+* Email Marketing Tools
+
+---
+
+## 📈 How I’m Growing
+
+* 🧱 Building strong programming & CS fundamentals
+* 🔄 Practicing Git/GitHub workflows
+* 🛠 Developing real-world portfolio projects
+* 🌐 Creating a personal website & blog
+* 🎯 Preparing for Erasmus Mundus MSc in Data Science
+* 📊 Learning entrepreneurship & client management
+
+---
+
+## ⚡ Fun Facts
+
+* 🧠 Love critical thinking & problem-solving
+* 🔥 Believe in learning by building
+* 🎯 Passionate about creativity + technology
+* ⚙️ Highly adaptable — can learn anything with time
+
+---
+
+## 📊 Stats
+
+<p align="center">
+  <img src="https://stats.shoaaib.site/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
+</p>
+
+<p align="center">
+  <a href="https://codeforces.com/profile/Shoaaib_Taimur" target="_blank">
+    <img src="https://codeforces-stats-vlx.vercel.app/api/card?username=Shoaaib_Taimur&theme=solarized_dark"/>
+  </a>
+</p>
+
+---
+
+
+## ✨ Quote
+
+> Curiosity sparks growth, persistence builds success.
+
+---
+
+☕ Made with coffee, code, and the occasional existential crisis 😅
