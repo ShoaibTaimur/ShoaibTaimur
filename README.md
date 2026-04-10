@@ -77,7 +77,7 @@
 ##  Stats
 
 <p align="center">
-  <img src="https://taimur.dev/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
+  <img src="https://stats.taimur.dev/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
 </p>
 
 <p align="center">
