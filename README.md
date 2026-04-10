@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://shoaaib.site" target="_blank">
+  <a href="https://taimur.dev" target="_blank">
   <img src="https://img.shields.io/badge/🌐%20Portfolio-8b5cf6?style=for-the-badge"/>
 </a>
   <a href="https://www.linkedin.com/in/shoaaib-taimur" target="_blank">
@@ -77,7 +77,7 @@
 ##  Stats
 
 <p align="center">
-  <img src="https://stats.shoaaib.site/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
+  <img src="https://taimur.dev/api/card?username=ShoaibTaimur&theme=dark&cache_seconds=300"/>
 </p>
 
 <p align="center">
