@@ -13,11 +13,11 @@
 <text x="40" y="212" fill="#e5e7eb" font-size="16" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Language Usage</text>
 <line x1="40" y1="220" x2="600" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
 <text x="40" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">JavaScript: 259,703</text>
-<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Java: 156,448</text>
-<text x="40" y="264" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">TypeScript: 109,345</text>
-<text x="40" y="282" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">CSS: 13,967</text>
+<text x="40" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">TypeScript: 173,161</text>
+<text x="40" y="264" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Java: 156,448</text>
+<text x="40" y="282" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">CSS: 14,251</text>
 <text x="40" y="300" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Shell: 8,979</text>
-<text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 8,519</text>
+<text x="332" y="228" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">HTML: 8,540</text>
 <text x="332" y="246" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">PowerShell: 7,818</text>
 <text x="332" y="264" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">PLSQL: 4,022</text>
 <text x="332" y="282" fill="#e5e7eb" font-size="13" font-family="Segoe UI, Ubuntu, Arial, sans-serif">Dockerfile: 470</text>
